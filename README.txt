@@ -22,7 +22,7 @@ mkdir src-test
 
 # The dependent jars.
 mkdir lib-sys
-mvn dependency:resolve -DoutputDirectory=lib-sys
+mvn dependency:copy-dependencies -DoutputDirectory=lib-sys
 
 Either use Eclipse (the project setup is included) or use "mvn compile" which
 places the jar in target/classes

@@ -6,10 +6,9 @@
 
 package dev;
 
-import org.openjena.atlas.lib.StrUtils ;
+import org.openjena.atlas.lib.StrUtils;
 
-import com.hp.hpl.jena.tdb.TDB ;
-import com.hp.hpl.jena.tdb.solver.Explain ;
+import com.hp.hpl.jena.tdb.TDB;
 
 public class RunBSBM
 {
@@ -17,7 +16,7 @@ public class RunBSBM
     {
         TDB.init();
         //Log.enable("com.hp.hpl.jena.tdb.exec") ;
-        TDB.setExecutionLogging(Explain.InfoLevel.ALL) ;
+//        TDB.setExecutionLogging(Explain.InfoLevel.ALL) ;
         
         if ( args.length == 0 )
         {

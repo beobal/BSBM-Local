@@ -13,7 +13,7 @@ JENADB=TDB-DB
 SESAMEDB=Sesame-DB
 [ -d "$SESAMEDB" ] || { echo "Not a directory: $SESAMEDB" ; exit 1 ; }
 
-CLASSPATH='classes:build/classes:lib/*:lib-sys/*'
+CLASSPATH='classes:build/classes:lib/*:lib-sys/*:target/classes'
 
 if [ "$OSTYPE" = "cygwin" ]
 then
